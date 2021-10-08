@@ -11,31 +11,31 @@ public:
 
     int uMinutes(int min)
     {
-        return seconds(min * 60);
+        return uSeconds(min * 60);
     }
 
     int uHours(int hrs)
     {
-        return minutes(hrs * 60);
+        return uMinutes(hrs * 60);
     }
 
     int uDays(int days)
     {
-        return hours(days * 24);
+        return uHours(days * 24);
     }
 
     int uWeeks(int weeks)
     {
-        return days(days * 7);
+        return uDays(weeks * 7);
     }
 
     int uMonths(int months)
     {
-        return days(months * 30.5);
+        return uDays(months * 30.5);
     }
     int uYears(int years)
     {
-        return days(years * 365);
+        return uDays(years * 365);
     }
 
     int mSeconds(int s)
@@ -45,30 +45,30 @@ public:
 
     int mMinutes(int min)
     {
-        return seconds(min * 60);
+        return mSeconds(min * 60);
     }
 
     int mHours(int hrs)
     {
-        return minutes(hrs * 60);
+        return mMinutes(hrs * 60);
     }
 
     int mDays(int days)
     {
-        return hours(days * 24);
+        return mHours(days * 24);
     }
 
     int mWeeks(int weeks)
     {
-        return days(days * 7);
+        return mDays(weeks * 7);
     }
 
     int mMonths(int months)
     {
-        return days(months * 30.5);
+        return mDays(months * 30.5);
     }
     int mYears(int years)
     {
-        return days(years * 365);
+        return mDays(years * 365);
     }
-}
+};
